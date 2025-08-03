@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple GitHub User Info</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+
+    <h1>GitHub User Info</h1>
+    
+    <div>
+        <input type="text" id="username" placeholder="Enter GitHub username">
+        <button onclick="fetchUser()">Get Info</button>
+    </div>
+    
+    <div id="user-info" style="display:none;">
+        <img class="avatar" id="avatar">
+        <h2 id="name"></h2>
+        <p>Username: <span id="login"></span></p>
+        <p>Followers: <span id="followers"></span></p>
+        <p>Following: <span id="following"></span></p>
+        <p>Public Repos: <span id="repos"></span></p>
+    </div>
+        
+    <p id="error" class="error"></p>
+
+    
+</body>
+</html>
